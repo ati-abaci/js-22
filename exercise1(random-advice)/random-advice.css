@@ -1,0 +1,81 @@
+body{
+    background-color: #202632;
+}
+
+.container{
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: #313A49;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.adviceId{
+    color: #53FFAB;
+    font-family: Verdana;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adviceContainer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 270px;
+}
+
+
+#advice{
+    color: #A9BBC4;
+    padding-bottom: 20px;
+    font-family: Verdana;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.design{
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.design i{
+    color: #A9BBC4;
+    background-color:#313A49;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.theLine{
+    border: 0.3px solid #A9BBC4;
+    width: 200px;
+}
+
+button{
+    background-color: #53FFAB;
+    border: none;
+    border-radius:100%;
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+button:hover{
+    box-shadow: 0 0 50px rgba(86, 232, 193, 0.7);
+}
