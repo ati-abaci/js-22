@@ -9,36 +9,27 @@
 
 ////////Answer///////////
 
-
-
 fetch("https://handlers.education.launchcode.org/static/planets.json")
-  .then(response => response.json())
-  .then(data => {
+  .then((response) => response.json())
+  .then((data) => {
     const planets = data;
-    let index = 0; 
+    let index = 0;
     const destinationDiv = document.getElementById("destination");
 
     destinationDiv.innerHTML = `<h3>${planets[index].name}</h3>
-    <p>Distance: ${planets[index].distance} </p> 
-    <p> Star:${planets[index].star}</p> <p> Moon:${planets[index].moons}</p> 
-    <img src="${planets[index].image}" alt="${planets[index].name}" 
-    style="width: 300px; height: auto;">`;
+    <p>Distance: ${planets[index].distance} </p>`;
 
     destinationDiv.addEventListener("click", () => {
-      index++; 
+      index++;
 
       if (index >= planets.length) {
-        index = 0; 
+        index = 0;
       }
 
       destinationDiv.innerHTML = `<h3>${planets[index].name}</h3>
-      <p>Distance: ${planets[index].distance}</p> 
-      <p> Star:${planets[index].star}<p> 
-      <p> Moon:${planets[index].moons}</p> 
-      <img src="${planets[index].image}" alt="${planets[index].name}" 
-      style="width: 300px; height: auto;">`;
+      <p>Distance: ${planets[index].distance}</p>`;
     });
   })
-  .catch(error => {
+  .catch((error) => {
     console.error("Error fetching planet data:", error);
   });
